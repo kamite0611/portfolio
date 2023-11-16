@@ -1,11 +1,13 @@
 import { ReactNode } from 'react';
 
-import { Page } from '../functional';
+import { useTransition } from '@/common/hooks';
 
 type LayoutProps = {
   children: ReactNode;
+  transition?: boolean;
 };
 
-export const Layout = ({ children }: LayoutProps) => {
-  return <Page>{children}</Page>;
+export const Layout = ({ children, transition = true }: LayoutProps) => {
+  useTransition({ disable: !transition });
+  return <>{children}</>;
 };
