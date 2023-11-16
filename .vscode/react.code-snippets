@@ -1,0 +1,63 @@
+{
+  "Ts React Page": {
+    "scope": "typescriptreact",
+    "prefix": "pg",
+    "body": [
+      "type ${1:$TM_FILENAME_BASE}PageProps = {",
+      "}\n",
+      "export default function $1Page(props: $1PageProps) {",
+      "  return (",
+      "    <>",
+      "    </>",
+      "  );",
+      "};\n"
+    ],
+    "description": "Reactページの雛形"
+  },
+  "Ts React Function": {
+    "scope": "typescriptreact",
+    "prefix": "fc",
+    "body": [
+      "type ${1:$TM_FILENAME_BASE}Props = {",
+      "}\n",
+      "export const $1 = (props: $1Props) => {",
+      "  return (",
+      "    <>",
+      "    </>",
+      "  );",
+      "};\n"
+    ],
+    "description": "Reactページの雛形"
+  },
+  "Ts React API handler": {
+    "scope": "typescript",
+    "prefix": "api",
+    "body": [
+      "import { NextApiRequest, NextApiResponse } from 'next';",
+      "",
+      "import { handleApiRoute } from '@/common/utils/api';",
+      "",
+      "type $1Req = any;",
+      "type $1Res = any;",
+      "",
+      "export default async function handler(req: NextApiRequest, res: NextApiResponse) {",
+      "  return new Promise(() => {",
+      "    /**  */",
+      "    handleApiRoute<$1Req, $1Res>('${1}', req, res, {",
+      "      requiredParams: [],",
+      "      callback: async (req) => {",
+      "        const {} = req.body;",
+      "      },",
+      "    });",
+      "  });",
+      "}"
+    ],
+    "description": "Next.js API Routeの雛形"
+  },
+  "MUI styled snippet": {
+    "scope": "typescriptreact",
+    "prefix": "st",
+    "body": ["const Styled$1 = styled($1)(({ theme }) => ({}))"],
+    "description": "muiのstyled()のスニペット"
+  }
+}
