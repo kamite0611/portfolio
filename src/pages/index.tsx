@@ -1,32 +1,49 @@
-import { Stack, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
 
+import { Stack } from '@mui/material';
+
+import { Carrier, PersonalProductList } from '@/@view-model/Top';
+import { Myself } from '@/@view-model/Top/Myself';
+import { Skills } from '@/@view-model/Top/Skills';
 import { Page } from '@/components/functional';
 
 export default function Home() {
   return (
-    <Page>
+    <Page config={{ title: 'KAMITE.ME' }}>
       <Stack
+        flexGrow={1}
         sx={{
-          padding: 2,
-          maxWidth: '800px',
-          width: '100%',
-          margin: 'auto',
-          my: 5,
+          flexDirection: { xs: 'column', sm: 'row' },
         }}
       >
-        <Typography my={2} variant="h1">
-          Welcome to Next.js sample app.
-        </Typography>
+        {/* 自己紹介 */}
+        <Myself />
 
-        <ul>
-          <li>Next.js（PagesRouter） v14.0</li>
-          <li>MaterialUI v5.14</li>
-          <li>nprogress</li>
-          <li>ESLint</li>
-          <li>Prettier</li>
-          <li>VSCode settings</li>
-          <li>locale settings</li>
-        </ul>
+        <Stack
+          flexGrow={1}
+          sx={{
+            width: { xs: '100%', sm: '60%' },
+            height: { sm: '100vh' },
+            overflow: { sm: 'scroll' },
+          }}
+        >
+          {/* 個人開発 */}
+          <PersonalProductList />
+
+          <Stack sx={{ padding: { xs: '30px ', sm: '50px' } }}>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              transition={{ duration: 0.5 }}
+              animate={{ opacity: 1, x: 0 }}
+            >
+              <Carrier />
+            </motion.div>
+          </Stack>
+
+          <Stack>
+            <Skills />
+          </Stack>
+        </Stack>
       </Stack>
     </Page>
   );
