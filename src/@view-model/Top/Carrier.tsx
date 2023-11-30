@@ -16,7 +16,7 @@ const carriers = {
       ),
     },
     {
-      date: '2022/08 ~ ',
+      date: '2022/07 ~ 2023/06',
       title: 'LINEマーケティングツール',
       comment: (
         <>
@@ -29,7 +29,7 @@ const carriers = {
   ],
   '2022': [
     {
-      date: '2022/08 ~ ',
+      date: '2022/07 ~ 2023/09',
       title: '美容室管理サービス',
       comment: (
         <>
@@ -40,7 +40,7 @@ const carriers = {
       ),
     },
     {
-      date: '2022/08 ~ 2022/06',
+      date: '2021/08 ~ 2022/06',
       title: 'ショート動画配信サービス',
       comment: (
         <>
@@ -53,7 +53,7 @@ const carriers = {
   ],
   '2021': [
     {
-      date: '2021/06~2021/11',
+      date: '2021/06 ~ 2021/11',
       title: 'チャットボット開発',
       comment: (
         <>
