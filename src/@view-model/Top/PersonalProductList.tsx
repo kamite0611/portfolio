@@ -24,21 +24,6 @@ export const PersonalProductList = (props: PersonalProductListProps) => {
           }}
         >
           <PersonalProductItem
-            date="2023/10 ~"
-            description="FlutterのWidgetサンプル図鑑"
-            title="Flutter図鑑"
-            tech={['Next.js', 'Flutter', 'Vercel']}
-            comment={
-              <>
-                個人開発。
-                Flutter図鑑はFlutterから提供されているWidgetサンプルが集まった情報メディアです。
-              </>
-            }
-            logoUrl="/images/flutter-gallery/logo.png"
-            productUrl="https://www.flutter-gallery.com/"
-          />
-
-          <PersonalProductItem
             date="2023/8 ~"
             description="シーシャバー検索サービス"
             title="HelloChill"
@@ -51,6 +36,20 @@ export const PersonalProductList = (props: PersonalProductListProps) => {
             }
             logoUrl="/images/hello-chill/logo.png"
             productUrl="https://www.hello-chill.com/"
+          />
+          <PersonalProductItem
+            date="2023/10 ~"
+            description="FlutterのWidgetサンプル図鑑"
+            title="Flutter図鑑"
+            tech={['Next.js', 'Flutter', 'Vercel']}
+            comment={
+              <>
+                個人開発。
+                Flutter図鑑はFlutterから提供されているWidgetサンプルが集まった情報メディアです。
+              </>
+            }
+            logoUrl="/images/flutter-gallery/logo.png"
+            productUrl="https://www.flutter-gallery.com/"
           />
         </Stack>
       </motion.div>
