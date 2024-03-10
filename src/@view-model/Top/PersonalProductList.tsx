@@ -23,7 +23,7 @@ export const PersonalProductList = (props: PersonalProductListProps) => {
             gap: '80px',
           }}
         >
-          <PersonalProductItem
+          {/* <PersonalProductItem
             date="2023/8 ~"
             description="シーシャバー検索サービス"
             title="HelloChill"
@@ -36,7 +36,7 @@ export const PersonalProductList = (props: PersonalProductListProps) => {
             }
             logoUrl="/images/hello-chill/logo.png"
             productUrl="https://www.hello-chill.com/"
-          />
+          /> */}
           <PersonalProductItem
             date="2023/10 ~"
             description="FlutterのWidgetサンプル図鑑"
