@@ -9,14 +9,7 @@ const nextConfig = {
     scrollRestoration: true,
   },
   reactStrictMode: false,
-  serverExternalPackages: [
-    '@emotion/react',
-    '@emotion/styled',
-    '@emotion/cache',
-    '@emotion/server',
-    '@mui/material',
-    '@mui/styled-engine',
-  ],
+  output: 'export',
 };
 
 module.exports = nextConfig;
