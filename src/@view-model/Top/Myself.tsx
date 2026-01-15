@@ -50,60 +50,85 @@ export const Myself = (props: MyselfProps) => {
             <b>好きな技術</b>
             TypeScript, GCP
           </Stack>
-          <Stack direction="row" mt={4} gap={1}>
-            <CustomLink
-              href="https://twitter.com/kamite0611"
-              target="_blank"
-              mode="noStyle"
-              sx={{
-                width: '40px',
-                height: '40px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: 'black',
-                borderRadius: 1,
-              }}
-            >
-              <CustomImage src="/images/icons/twitter.svg" size={20} />
-            </CustomLink>
-            <CustomLink
-              href="https://github.com/kamite0611"
-              target="_blank"
-              mode="noStyle"
-              sx={{
-                width: '40px',
-                height: '40px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: '#fff',
-                borderRadius: 1,
-              }}
-            >
-              <CustomImage src="/images/icons/github.svg" size={28} />
-            </CustomLink>
-            <CustomLink
-              href="https://zenn.dev/kamite"
-              target="_blank"
-              mode="noStyle"
-              sx={{
-                width: '110px',
-                height: '40px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: '#fff',
-                borderRadius: 1,
-              }}
-            >
-              <CustomImage
-                src="/images/icons/zenn.png"
-                mode="contain"
-                width={88}
-                height={22}
-              />
-            </CustomLink>
+          <Stack gap={1}>
+            <Stack direction="row" mt={4} gap={1}>
+              <CustomLink
+                href="https://twitter.com/kamite0611"
+                target="_blank"
+                mode="noStyle"
+                sx={{
+                  width: '40px',
+                  height: '40px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  backgroundColor: 'black',
+                  borderRadius: 1,
+                }}
+              >
+                <CustomImage src="/images/icons/twitter.svg" size={20} />
+              </CustomLink>
+              <CustomLink
+                href="https://github.com/kamite0611"
+                target="_blank"
+                mode="noStyle"
+                sx={{
+                  width: '40px',
+                  height: '40px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  backgroundColor: '#fff',
+                  borderRadius: 1,
+                }}
+              >
+                <CustomImage src="/images/icons/github.svg" size={28} />
+              </CustomLink>
+              <CustomLink
+                href="https://zenn.dev/kamite"
+                target="_blank"
+                mode="noStyle"
+                sx={{
+                  width: '110px',
+                  height: '40px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  backgroundColor: '#fff',
+                  borderRadius: 1,
+                }}
+              >
+                <CustomImage
+                  src="/images/icons/zenn.png"
+                  mode="contain"
+                  width={88}
+                  height={22}
+                />
+              </CustomLink>
+            </Stack>
+            <Stack direction="row" gap={1}>
+              <CustomLink
+                href="https://note.com/akamite"
+                target="_blank"
+                mode="noStyle"
+                sx={{
+                  width: '110px',
+                  height: '40px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  backgroundColor: '#fff',
+                  borderRadius: 1,
+                }}
+              >
+                <CustomImage
+                  src="/images/icons/note.png"
+                  mode="contain"
+                  width={88}
+                  height={30}
+                />
+              </CustomLink>
+            </Stack>
           </Stack>
         </Stack>
       </motion.div>
