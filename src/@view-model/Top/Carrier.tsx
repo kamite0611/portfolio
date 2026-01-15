@@ -3,9 +3,29 @@ import { Stack } from '@mui/material';
 type CarrierProps = {};
 
 const carriers = {
+  '2025': [
+    {
+      date: '2025/9 ~ 2026/1',
+      title: '起業',
+      comment: <>役割: CTO</>,
+    },
+  ],
+  '2024': [
+    {
+      date: '2024/11 ~ 2025/9',
+      title: '富裕層向けマッチングアプリの開発',
+      comment: (
+        <>
+          役割: フリーランス
+          <br />
+          言語: Next.js / ReactNative / NestJS / GraphQL / GCP
+        </>
+      ),
+    },
+  ],
   '2023': [
     {
-      date: '2022/08 ~ ',
+      date: '2022/08 ~ 2024/11',
       title: 'ふるさと納税管理サービス',
       comment: (
         <>
@@ -15,62 +35,29 @@ const carriers = {
         </>
       ),
     },
-    {
-      date: '2022/07 ~ 2023/06',
-      title: 'LINEマーケティングツール',
-      comment: (
-        <>
-          役割: フリーランス
-          <br />
-          言語: Ruby on Rails / Elixir / Vue.js / AWS
-        </>
-      ),
-    },
   ],
-  '2022': [
+  '2021': [
     {
-      date: '2022/07 ~ 2023/09',
-      title: '美容室管理サービス',
-      comment: (
-        <>
-          役割: CTO
-          <br />
-          言語: React / NestJS / Hasura / GCP
-        </>
-      ),
-    },
-    {
-      date: '2021/08 ~ 2022/06',
+      date: '2021/11 ~ 2022/6',
       title: 'ショート動画配信サービス',
       comment: (
         <>
-          役割: フリーランス
+          役割: 正社員
           <br />
           言語: React / Vue.js / Ruby on Rails
         </>
       ),
     },
   ],
-  '2021': [
+  '2019': [
     {
-      date: '2021/06 ~ 2021/11',
-      title: 'チャットボット開発',
-      comment: (
-        <>
-          役割: 正社員
-          <br />
-          言語: Node.js / React
-        </>
-      ),
-    },
-    {
-      date: '2019/09 ~ 2021/06',
+      date: '2019/09 ~ 2021/03',
       title: '美容室予約サービス',
       comment: (
         <>
           役割: 正社員
           <br />
-          言語: Ruby on Rails / Vue.js{' '}
+          言語: Ruby on Rails / Vue.js
         </>
       ),
     },

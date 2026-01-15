@@ -41,16 +41,14 @@ export const Myself = (props: MyselfProps) => {
             チームでのものづくりが好き。
             <br />
             趣味程度に気になった技術を使って個人開発してます。
-            <br />
-            スタートアップの技術査定などもたまに。
           </Stack>
           <Stack sx={{ mt: 4, fontSize: '12px' }}>
             <b>最近の趣味</b>
-            OpenAI, Kafka, Flutter
+            Go, 強化学習, IoT
           </Stack>
           <Stack sx={{ mt: 3, fontSize: '12px' }}>
             <b>好きな技術</b>
-            Next.js, Typescript, GCP
+            TypeScript, GCP
           </Stack>
           <Stack direction="row" mt={4} gap={1}>
             <CustomLink

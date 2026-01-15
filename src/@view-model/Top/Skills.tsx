@@ -31,8 +31,8 @@ export const Skills = (props: SkillsProps) => {
           skills={[
             { lang: 'react', value: 100 },
             { lang: 'nextjs', value: 100 },
+            { lang: 'reactnative', value: 75 },
             { lang: 'flutter', value: 75 },
-            { lang: 'vuejs', value: 50 },
           ]}
         />
       </Stack>
