@@ -13,8 +13,7 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "volta": {
-    "node": "20.9.0",
-    "yarn": "1.22.19"
+    "node": "20.9.0"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
